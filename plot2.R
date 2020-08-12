@@ -8,7 +8,7 @@ data_given <- read.table("./exdata_data_household_power_consumption/household_po
 data_given$Date <- as.Date(data_given$Date, format = "%d/%m/%Y")
 data_given <- subset(data_given, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"))
 
-## Plotting the line diagramme
+## Plotting the line diagram
 
 plot(data_given$Global_active_power, type = "l", xlab = "", 
      ylab = "Global Active Power(kilowatts)", axes = FALSE)
